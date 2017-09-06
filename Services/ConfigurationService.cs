@@ -17,22 +17,6 @@ namespace PolymorphismOverSwitch.Services
             settingCache = new ConcurrentDictionary<string, string>();
         }
 
-        public string WcsServerAddress
-        {
-            get
-            {
-                return RetrieveSetting();
-            }
-        }
-
-        public string IgnoreWcsCertificateErrors
-        {
-            get
-            {
-                return RetrieveSetting();
-            }
-        }
-
         public string VinServiceEndPoint
         {
             get

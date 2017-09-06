@@ -17,12 +17,10 @@ namespace PolymorphismOverSwitch.Services
 {
     public class VinService : IVinService
     {
-        private readonly IHttpClientService httpClientService;
         private readonly IConfigurationService configurationService;
 
-        public VinService(IHttpClientService httpClientService, IConfigurationService configurationService)
+        public VinService(IConfigurationService configurationService)
         {
-            this.httpClientService = httpClientService;
             this.configurationService = configurationService;
         }
 
